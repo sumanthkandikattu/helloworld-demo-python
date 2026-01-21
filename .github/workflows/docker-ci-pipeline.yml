@@ -15,3 +15,5 @@ jobs:
         with:
          username: ${{ vars.DOCKER_USERNAME }}
          password: ${{ secrets. DOCKER_DEMO }}
+      - name: push image
+        run: docker push kandikattusumanth/helloworld-demo-pytho:KS 
