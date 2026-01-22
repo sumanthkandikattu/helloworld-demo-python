@@ -15,7 +15,7 @@ jobs:
       - name: view container
         run: docker ps
       - name: check output
-        run: curl http://localhost:8000
+        run: curl -X http://localhost:8000
       - name: Docker Login
         uses: docker/login-action@v3.6.0
         with:
