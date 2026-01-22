@@ -1,5 +1,9 @@
 name: docker-ci-pipiline
-on: push
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - 'Contributions.md'
 jobs:
   docker-ci-job:
     runs-on: ubuntu-latest
