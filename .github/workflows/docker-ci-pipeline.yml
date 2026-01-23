@@ -46,7 +46,6 @@ jobs:
       - name: apply.yaml files
         run: |
              kubectl apply -f k8s/.
-             kubectl config set-context --current --namespace=python-app
              kubectl wait --for=condition=ready pod -l app=helloworld-demo-pytho
       - name: get status
         run: |
